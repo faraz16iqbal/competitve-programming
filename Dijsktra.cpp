@@ -14,8 +14,6 @@ while (!q.empty()) {
   for (auto u : adj[a]) {
     int b = u.first;
     int w = u.second;
-    if (w > mid)
-      continue;
     if (distances[a] + w < distances[b]) {
       distances[b] = distances[a] + w;
       parent[b] = a;
