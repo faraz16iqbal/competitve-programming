@@ -37,7 +37,7 @@ int lift_node(int node, int jumps) {
   return -1;
 }
 
-// Call getDepth() first
+// Call get_depth() first
 int LCA(int u, int v) {
   if (depth[v] > depth[u])
     swap(u, v);
